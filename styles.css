@@ -1,0 +1,30 @@
+* {
+    outline: dashed red;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1280px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;;
+}
+
+.links ul {
+    display: flex;
+}
