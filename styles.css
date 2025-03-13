@@ -56,7 +56,9 @@ body {
 
 .btn {
     background-color: var(--button-blue);
+    border: 2px solid var(--button-blue);
     color: var(--main-white);
+    flex-shrink: 0;
 }
 
 .btn-secondary {
