@@ -1,5 +1,5 @@
 * {
-    outline: dashed red;
+    /* outline: dashed red; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -32,6 +32,13 @@ body {
 .container {
     grid-column: 2;
 }
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    min-height: 500px;
+}
 
 .bg-dark {
     background-color: var(--main-dark-blue);
@@ -40,6 +47,22 @@ body {
 
 .bg-grey{
     background-color: var(--secondary-white);
+}
+
+.btn, .btn-secondary {
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+}
+
+.btn {
+    background-color: var(--button-blue);
+    color: var(--main-white);
+}
+
+.btn-secondary {
+    border: 2px solid var(--main-white);
+    color: var(--main-white);
+    background-color: var(--button-blue);
 }
 
 /* Navigation */
@@ -63,14 +86,6 @@ body {
 .links ul a {
     text-decoration: none;
     color: var(--main-white);
-}
-
-.section {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding: 16px;
-    min-height: 500px;
 }
 
 .logo {
@@ -145,6 +160,26 @@ img {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+/* Call to action */
+.ctaSection {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    min-height: 500px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+    gap: 16px;
+    background-color: var(--button-blue);
+    color: var(--main-white);
+    border-radius: 1rem;
+    flex: 1;
 }
 
 /* Footer */
