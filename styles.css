@@ -1,6 +1,19 @@
 * {
     outline: dashed red;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-dark-blue: #1F2937;
+    --main-white: #F9FaF8;
+    --secondary-white: #E5E7EB;
+    --button-blue: #3882F6;
+
+
+    font-family: 'Roboto';
+    font-size: 18px;
 }
 
 ul {
@@ -10,12 +23,23 @@ ul {
 }
 
 body {
-    display: flex;
-    justify-content: center;
 }
 
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr min(1500px, calc(100% - 40px)) 1fr;
+}
 .container {
-    max-width: 1280px;
+    grid-column: 2;
+}
+
+.bg-dark {
+    background-color: var(--main-dark-blue);
+    color: var(--main-white);
+}
+
+.bg-grey{
+    background-color: var(--secondary-white);
 }
 
 /* Navigation */
@@ -23,15 +47,22 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 32px;;
+    background-color: var(--main-dark-blue);
+}
+
+.logo {
+    font-size: 1.33rem;
 }
 
 .links ul {
     display: flex;
     gap: 16px;
+    
 }
 
 .links ul a {
     text-decoration: none;
+    color: var(--main-white);
 }
 
 .section {
@@ -42,16 +73,12 @@ body {
     min-height: 500px;
 }
 
+.logo {
+    color: var(--main-white);
+}
+
 
 /* Hero Section */
-
-.hero {
-    /* display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding: 16px;
-    min-height: 500px; */
-}
 
 .hero > * {
     flex: 1;
@@ -59,8 +86,27 @@ body {
     margin: auto 0;
 }
 
+.heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:16px;
+}
+
+.heroText h1 {
+    color: var(--main-white);
+    font-size: 2.6rem;
+    line-height: 1.2;
+    font-weight: 900;
+}
+.heroText p {
+    color: var(--secondary-white);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -83,7 +129,7 @@ img {
     width: 100%;
     aspect-ratio: 1/1;
     background-color: white;
-    border: medium solid blue;
+    border: medium solid var(--button-blue);
     border-radius: 16px;
 }
 
@@ -99,4 +145,10 @@ img {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 32px;
 }
