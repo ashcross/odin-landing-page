@@ -18,7 +18,7 @@ body {
     max-width: 1280px;
 }
 
-
+/* Navigation */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -27,4 +27,76 @@ body {
 
 .links ul {
     display: flex;
+    gap: 16px;
+}
+
+.links ul a {
+    text-decoration: none;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    min-height: 500px;
+}
+
+
+/* Hero Section */
+
+.hero {
+    /* display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    min-height: 500px; */
+}
+
+.hero > * {
+    flex: 1;
+    padding: 16px;
+    margin: auto 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Features Section */
+
+.featureSection {
+    flex-direction: column;
+    align-items: center;
+}
+
+.features {
+    display: flex;
+    gap: 48px;
+    max-width: 50rem;
+    text-align: center;
+}
+
+.featureCard > .featureBox {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border: medium solid blue;
+    border-radius: 16px;
+}
+
+/* Testimonial section */
+
+.testimonialSection{
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonialCard {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
