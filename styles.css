@@ -52,6 +52,7 @@ body {
 .btn, .btn-secondary {
     border-radius: 0.5rem;
     padding: 0.5rem 2rem;
+    font-weight: 600;
 }
 
 .btn {
@@ -81,7 +82,7 @@ body {
 
 .links ul {
     display: flex;
-    gap: 16px;
+    gap: 32px;
     
 }
 
@@ -162,6 +163,16 @@ img {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+.testimonialCard blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.testimonialCard .quoteAuthor {
+    font-weight: 900;
 }
 
 /* Call to action */
